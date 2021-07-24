@@ -1,0 +1,8 @@
+#!/usr/bin/env fish
+
+switch (uname)
+    case Linux
+        sh -c "\$(curl -fsSL https://starship.rs/install.sh)"
+    case Darwin
+        brew install starship
+end
