@@ -3,3 +3,5 @@
 set CUR_DIR (realpath (dirname (status --current-filename)))
 mkdir -p ~/.config
 ln -s $CUR_DIR/starship.toml ~/.config/starship.toml
+mkdir -p ~/.config/fish/conf.d
+echo "starship init fish | source" > ~/.config/fish/conf.d/starship.fish
